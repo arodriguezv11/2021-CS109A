@@ -25,11 +25,11 @@ def haversine(pt, lat2=42.355589, lon2=-71.060175):
 
 
 def get_distance():
-    # Read the data from the file "hubway_stations.csv"
-    stations = pd.read_csv("hubway_stations.csv")
+    # Read the data from the f ile "hubway_stations.csv"
+    stations = pd.read_csv(" ")
 
     # Read the data from the file "hubway_trips.csv"
-    trips = pd.read_csv("hubway_trips.csv")
+    trips = pd.read_csv("C:\\Users\\Araceli\\OneDrive - ETH Zurich\\Documentos\\ARACELI OTROS\\GitHub\\2021-CS109A\\content\\lectures\\lecture01\\data\\hubway_trips.csv")
 
     station_counts = np.unique(trips['strt_statn'].dropna(), return_counts=True)
     counts_df = pd.DataFrame({'id': station_counts[0], 'checkouts': station_counts[1]})
